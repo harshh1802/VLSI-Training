@@ -1,7 +1,7 @@
 'ifndef RAM_ENVIRONMENT_SV
 'define RAM_ENVIRONMENT_SV
 
-class ram_env;
+class ram_environment;
 
   ram_trans trans;
   ram_generator ram_gen;

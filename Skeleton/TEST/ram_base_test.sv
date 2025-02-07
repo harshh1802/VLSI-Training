@@ -1,19 +1,25 @@
+`ifndef RAM_BASE_TEST_SV
+`define RAM_BASE_TEST_SV
+
+
 class ram_base_test;
 
-  //take handle of verification environment class
+  ram_environment ram_env
   
-  //declare all interface 
-  
-   //take connect method (only for virtual interface)
+  virtual ram_interface rif;
    
    //create environment and call its methods here as needed
    function void build();
-    :
-   endtask
+
+      ram_env = new();
+
+   function
    
-   function void connect(...);
-    :
-   endtask
+   function void connect(virtual ram_interface rif);
+
+      this.rif = rif
+
+   function
    
    task run();
     :
@@ -21,3 +27,5 @@ class ram_base_test;
      
   
 endclass
+
+`endif
