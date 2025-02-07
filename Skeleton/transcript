@@ -1,0 +1,54 @@
+# vsim -do {run -all; exit} -c exp 
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by:   Hostname:   ProcessID: 1
+#           Attempting to use alternate WLF file "./wlftj3tj5r".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftj3tj5r
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  Questa Sim
+# //  Version 10.0b win32 May  5 2011
+# //
+# //  Copyright 1991-2011 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading sv_std.std
+# Loading work.gen_dri_sv_unit
+# Loading work.exp(fast)
+# Loading work.ram_interface(fast)
+# run -all 
+# RAM GENERATOR DATA OUT = '{trans_type:SIM_RW, rd_addr:6, wr_addr:7, wr_data:88, read_count:1, write_count:1}
+# RAM DRIVER DATA IN : '{trans_type:SIM_RW, rd_addr:6, wr_addr:7, wr_data:88, read_count:1, write_count:1}
+# [DRIVER] Simultaneous R/W: RdAddr= 6 WrAddr= 7 WrData= 88
+# RAM GENERATOR DATA OUT = '{trans_type:READ, rd_addr:14, wr_addr:8, wr_data:204, read_count:2, write_count:1}
+# RAM DRIVER DATA IN : '{trans_type:READ, rd_addr:14, wr_addr:8, wr_data:204, read_count:2, write_count:1}
+# [DRIVER] Read operation: Addr=14
+# RAM GENERATOR DATA OUT = '{trans_type:READ, rd_addr:1, wr_addr:12, wr_data:100, read_count:3, write_count:1}
+# RAM DRIVER DATA IN : '{trans_type:READ, rd_addr:1, wr_addr:12, wr_data:100, read_count:3, write_count:1}
+# [DRIVER] Read operation: Addr= 1
+# RAM GENERATOR DATA OUT = '{trans_type:READ, rd_addr:9, wr_addr:0, wr_data:111, read_count:4, write_count:1}
+# RAM DRIVER DATA IN : '{trans_type:READ, rd_addr:9, wr_addr:0, wr_data:111, read_count:4, write_count:1}
+# [DRIVER] Read operation: Addr= 9
+# RAM GENERATOR DATA OUT = '{trans_type:READ, rd_addr:0, wr_addr:4, wr_data:5, read_count:5, write_count:1}
+# RAM DRIVER DATA IN : '{trans_type:READ, rd_addr:0, wr_addr:4, wr_data:5, read_count:5, write_count:1}
+# [DRIVER] Read operation: Addr= 0
+# RAM GENERATOR DATA OUT = '{trans_type:WRITE, rd_addr:8, wr_addr:9, wr_data:243, read_count:5, write_count:2}
+# RAM DRIVER DATA IN : '{trans_type:WRITE, rd_addr:8, wr_addr:9, wr_data:243, read_count:5, write_count:2}
+# [DRIVER] Write operation: Addr= 9 Data=243
+# RAM GENERATOR DATA OUT = '{trans_type:READ, rd_addr:3, wr_addr:13, wr_data:224, read_count:6, write_count:2}
+# RAM DRIVER DATA IN : '{trans_type:READ, rd_addr:3, wr_addr:13, wr_data:224, read_count:6, write_count:2}
+# [DRIVER] Read operation: Addr= 3
+# RAM GENERATOR DATA OUT = '{trans_type:READ, rd_addr:11, wr_addr:1, wr_data:226, read_count:7, write_count:2}
+# RAM DRIVER DATA IN : '{trans_type:READ, rd_addr:11, wr_addr:1, wr_data:226, read_count:7, write_count:2}
+# [DRIVER] Read operation: Addr=11
+# RAM GENERATOR DATA OUT = '{trans_type:READ, rd_addr:2, wr_addr:5, wr_data:224, read_count:8, write_count:2}
+# RAM DRIVER DATA IN : '{trans_type:READ, rd_addr:2, wr_addr:5, wr_data:224, read_count:8, write_count:2}
+# [DRIVER] Read operation: Addr= 2
+# RAM GENERATOR DATA OUT = '{trans_type:WRITE, rd_addr:10, wr_addr:10, wr_data:144, read_count:8, write_count:3}
+# RAM DRIVER DATA IN : '{trans_type:WRITE, rd_addr:10, wr_addr:10, wr_data:144, read_count:8, write_count:3}
+# [DRIVER] Write operation: Addr=10 Data=144
+# ** Note: $finish    : ./gen_dri.sv(38)
+#    Time: 200 ns  Iteration: 0  Instance: /exp
