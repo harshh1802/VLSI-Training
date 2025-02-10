@@ -1,5 +1,5 @@
-'ifndef RAM_ENVIRONMENT_SV
-'define RAM_ENVIRONMENT_SV
+`ifndef RAM_ENVIRONMENT_SV
+`define RAM_ENVIRONMENT_SV
 
 class ram_environment;
 
@@ -42,8 +42,8 @@ class ram_environment;
       this.rif = rif;
 
       ram_gen.connect(gen2drv);
-      ram_dri.connect(gen2drv, inf_drv);
-      ram_mon.connect(mon2ref, mon2scb, inf_drv);
+      ram_dri.connect(gen2drv, this.rif); //TODO : what we need to take here, rif or this.rif?
+      ram_mon.connect(mon2ref, mon2scb, this.rif);
       ram_ref_m.connect(mon2ref, ref2scb);
       ram_sb.connect(mon2scb, ref2scb);
 
@@ -58,4 +58,4 @@ class ram_environment;
   
 endclass
 
-'endif
+`endif

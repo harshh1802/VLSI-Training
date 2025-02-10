@@ -1,8 +1,6 @@
 `ifndef RAM_DRIVER_SV
 `define RAM_DRIVER_SV
 
-`include "ram_trans.sv"
-
 
 class ram_driver;
 

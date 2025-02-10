@@ -1,0 +1,196 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\Indicus_vlsi\System Verilog\Practical\Skeleton
+T_opt
+Z1 V4IaSeCFdWAI^ic__QRn0@2
+Z2 04 5 4 work trans fast 0
+Z3 =1-c84bd6322129-67a2db89-11f-4dc4
+Z4 o-quiet -auto_acc_if_foreign -work work
+Z5 n@_opt
+Z6 OE;O;10.0b;49
+Z7 dE:\Indicus_vlsi\System Verilog\Practical\Skeleton
+T_opt1
+Z8 VDdRUlj@9hQaVb@df<WFA<2
+Z9 04 3 4 work exp fast 0
+Z10 =1-c84bd6322129-67a2eeca-36e-52d0
+R4
+Z11 n@_opt1
+R6
+R7
+vexp
+Z12 DXx6 sv_std 3 std 0 22 :CP]PHbGOHGT_H:3KF`8L2
+Z13 DXx4 work 15 gen_dri_sv_unit 0 22 AkDnDJgbUCE9KF164Zk382
+Z14 VJcnSTGfAj>WUF1UndgcjL2
+r1
+31
+Z15 IDOO:BKBck^Gm^>_7n>19H2
+Z16 !s105 gen_dri_sv_unit
+S1
+R7
+Z17 w1738731171
+Z18 8.\gen_dri.sv
+Z19 F.\gen_dri.sv
+L0 5
+Z20 OE;L;10.0b;49
+Z21 !s108 1738731176.688000
+Z22 !s107 ram_interface.sv|ram_generator.sv|ram_driver.sv|ram_trans.sv|ram_defines.sv|.\gen_dri.sv|.\ram_driver.sv|.\ram_generator.sv|.\ram_trans.sv|.\ram_defines.sv|
+Z23 !s90 .\ram_defines.sv|.\ram_trans.sv|.\ram_generator.sv|.\ram_driver.sv|.\gen_dri.sv|
+Z24 o-L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!s85 0
+Z25 !s100 >XU:XM8z_G`kdQ<l9ec7K3
+Xgen_dri_sv_unit
+R12
+Z26 VAkDnDJgbUCE9KF164Zk382
+r1
+31
+Z27 IAkDnDJgbUCE9KF164Zk382
+S1
+R7
+R17
+R18
+R19
+Z28 Fram_driver.sv
+Z29 Fram_trans.sv
+Z30 Fram_defines.sv
+Z31 Fram_generator.sv
+R29
+Z32 Fram_interface.sv
+L3 17
+R20
+R21
+R22
+R23
+R24
+Z33 !s100 _LDhahU>_jI:Ii:CLkH6M1
+!s85 0
+!i103 1
+Xram_defines_sv_unit
+R12
+Z34 I6`8RVASdaM@_D06fGDOo20
+Z35 V6`8RVASdaM@_D06fGDOo20
+S1
+R7
+Z36 w1738640108
+Z37 8.\ram_defines.sv
+Z38 F.\ram_defines.sv
+L0 17
+R20
+r1
+31
+R21
+R22
+R23
+R24
+Z39 !s100 1[ojKWj8gL9T=@:kXa8lK0
+!i103 1
+!s85 0
+Xram_driver_sv_unit
+R12
+Z40 ISMTo6HaY=Pk:TVoAfJb_P1
+Z41 VSMTo6HaY=Pk:TVoAfJb_P1
+S1
+R7
+Z42 w1738730917
+Z43 8.\ram_driver.sv
+Z44 F.\ram_driver.sv
+R29
+R30
+L2 17
+R20
+r1
+31
+R21
+R22
+R23
+R24
+Z45 !s100 ;STo4Y]8O61?1e=;8P?Z@2
+!i103 1
+!s85 0
+Xram_generator_sv_unit
+R12
+Z46 I_3D:`fajBHd9F[?X7EgOB2
+Z47 V_3D:`fajBHd9F[?X7EgOB2
+S1
+R7
+Z48 w1738730556
+Z49 8.\ram_generator.sv
+Z50 F.\ram_generator.sv
+R29
+R30
+L2 17
+R20
+r1
+31
+R21
+R22
+R23
+R24
+Z51 !s100 nWS7;HCMC`<g85EGg`a1I2
+!i103 1
+!s85 0
+Yram_interface
+R12
+R13
+Z52 VW8NL3N`@]OU5MYS];:M`J2
+r1
+31
+Z53 IzYl2;_oK8oNnRmM=TGj0C0
+R16
+S1
+R7
+R17
+R32
+R18
+R19
+L0 4
+R20
+R21
+R22
+R23
+R24
+Z54 !s100 dJaAlm=:?l>43hZzWiaWS0
+!s85 0
+Xram_trans_sv_unit
+R12
+Z55 IE]HKhK?IJD3hMjS`k:TJZ1
+Z56 VE]HKhK?IJD3hMjS`k:TJZ1
+S1
+R7
+Z57 w1738729086
+Z58 8.\ram_trans.sv
+Z59 F.\ram_trans.sv
+R30
+L1 17
+R20
+r1
+31
+R21
+R22
+R23
+R24
+Z60 !s100 YBDnT^;icIG`U7IQgS71h0
+!i103 1
+!s85 0
+vtrans
+R12
+Z61 DXx4 work 17 ram_trans_sv_unit 0 22 :gYjG9Va;P^;2:ziJgNMd2
+Z62 VY@AgQ16VJTQbeKV[zSKl63
+r1
+31
+Z63 I[lIb?i[4Una?3`MfKMVG[3
+S1
+R7
+Z64 w1738726263
+R58
+R59
+L0 49
+R20
+R24
+Z65 !s108 1738726275.742000
+Z66 !s107 ram_defines.sv|.\ram_trans.sv|.\ram_defines.sv|
+Z67 !s90 .\ram_defines.sv|.\ram_trans.sv|
+Z68 !s100 gfK8?AhaSSdWN5[Ze25o73
+Z69 !s105 ram_trans_sv_unit
+!s85 0

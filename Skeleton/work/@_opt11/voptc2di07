@@ -1,0 +1,276 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\Indicus_vlsi\System Verilog\Practical\Skeleton
+T_opt
+Z1 VB`2MVYbTL<Ci3nKe@F5N>1
+Z2 04 3 4 work exp fast 0
+Z3 =1-c84bd6322129-67a2ef73-17e-2144
+Z4 o-quiet -auto_acc_if_foreign -work work
+Z5 n@_opt
+Z6 OE;O;10.0b;49
+Z7 dE:\Indicus_vlsi\System Verilog\Practical\Skeleton
+T_opt1
+Z8 VDdRUlj@9hQaVb@df<WFA<2
+R2
+Z9 =1-c84bd6322129-67a2eeca-36e-52d0
+R4
+Z10 n@_opt1
+R6
+R7
+T_opt10
+Z11 V[]:PcZ>?Eh?518=jg=]iP2
+R2
+Z12 =1-c84bd6322129-67a2f15d-37b-3be8
+R4
+Z13 n@_opt10
+R6
+R7
+T_opt11
+Z14 VbSg11H>dACk@XFG@oP4Sa2
+R2
+Z15 =1-c84bd6322129-67a2f178-1b4-e38
+R4
+Z16 n@_opt11
+R6
+R7
+T_opt2
+Z17 V3UHaW`[dYBfeMC]AY:2kE2
+R2
+Z18 =1-c84bd6322129-67a2ef5f-48-2734
+R4
+Z19 n@_opt2
+R6
+R7
+T_opt3
+Z20 VI>1oWEOg^JZjDo<?cVK4M3
+R2
+Z21 =1-c84bd6322129-67a2ef9f-77-1380
+R4
+Z22 n@_opt3
+R6
+R7
+T_opt4
+Z23 VY`@41MbnnkEWNG4]m:^FU0
+R2
+Z24 =1-c84bd6322129-67a2efbd-3e3-3f04
+R4
+Z25 n@_opt4
+R6
+R7
+T_opt5
+Z26 VM@=zzH]DPPB:bVi1mWned3
+R2
+Z27 =1-c84bd6322129-67a2f041-2be-5964
+R4
+Z28 n@_opt5
+R6
+R7
+T_opt6
+Z29 V3;z:lH05?JJdcz1UM6TY<0
+R2
+Z30 =1-c84bd6322129-67a2f075-9e-4eb4
+R4
+Z31 n@_opt6
+R6
+R7
+T_opt7
+Z32 VmX;Wk3>Xe[K3kf`N=>Te`2
+R2
+Z33 =1-c84bd6322129-67a2f0c6-326-29f8
+R4
+Z34 n@_opt7
+R6
+R7
+T_opt8
+Z35 VamzWC1TC38bJ3f_7T61O>3
+R2
+Z36 =1-c84bd6322129-67a2f0fd-35a-53c0
+R4
+Z37 n@_opt8
+R6
+R7
+T_opt9
+Z38 VEGb6RV<jhX@163aBoaW5I2
+R2
+Z39 =1-c84bd6322129-67a2f14f-1e5-2608
+R4
+Z40 n@_opt9
+R6
+R7
+vexp
+Z41 DXx6 sv_std 3 std 0 22 :CP]PHbGOHGT_H:3KF`8L2
+Z42 DXx4 work 15 gen_dri_sv_unit 0 22 SfQ4I=m]3f8QZVLVTY6SY0
+Z43 VJcnSTGfAj>WUF1UndgcjL2
+r1
+31
+Z44 IhCVOc]7gAW448QA_?;LPQ2
+Z45 !s105 gen_dri_sv_unit
+S1
+R7
+Z46 w1738731766
+Z47 8.\gen_dri.sv
+Z48 F.\gen_dri.sv
+L0 5
+Z49 OE;L;10.0b;49
+Z50 !s108 1738731893.080000
+Z51 !s107 ram_interface.sv|ram_generator.sv|ram_driver.sv|ram_trans.sv|ram_defines.sv|.\gen_dri.sv|.\ram_driver.sv|.\ram_generator.sv|.\ram_trans.sv|.\ram_defines.sv|
+Z52 !s90 .\ram_defines.sv|.\ram_trans.sv|.\ram_generator.sv|.\ram_driver.sv|.\gen_dri.sv|
+Z53 o-L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+Z54 !s100 EPEzKm=f>ehajJ6fP3SmT3
+!s85 0
+Xgen_dri_sv_unit
+R41
+Z55 VSfQ4I=m]3f8QZVLVTY6SY0
+r1
+31
+Z56 ISfQ4I=m]3f8QZVLVTY6SY0
+S1
+R7
+Z57 w1738731890
+R47
+R48
+Z58 Fram_driver.sv
+Z59 Fram_trans.sv
+Z60 Fram_defines.sv
+Z61 Fram_generator.sv
+R59
+Z62 Fram_interface.sv
+L3 17
+R49
+R50
+R51
+R52
+R53
+!s85 0
+Z63 !s100 PbZK97[Nzn5LV@HQlacgM1
+!i103 1
+Xram_defines_sv_unit
+R41
+Z64 I6`8RVASdaM@_D06fGDOo20
+Z65 V6`8RVASdaM@_D06fGDOo20
+S1
+R7
+Z66 w1738640108
+Z67 8.\ram_defines.sv
+Z68 F.\ram_defines.sv
+L0 17
+R49
+r1
+31
+R50
+R51
+R52
+R53
+Z69 !s100 1[ojKWj8gL9T=@:kXa8lK0
+!i103 1
+!s85 0
+Xram_driver_sv_unit
+R41
+Z70 ID3l@DCFBef4jg93;6R6Xm3
+Z71 VD3l@DCFBef4jg93;6R6Xm3
+S1
+R7
+R57
+Z72 8.\ram_driver.sv
+Z73 F.\ram_driver.sv
+R59
+R60
+L2 17
+R49
+r1
+31
+R50
+R51
+R52
+R53
+Z74 !s100 ^L:=n;2_d_0jC;>:9dHh;0
+!i103 1
+!s85 0
+Xram_generator_sv_unit
+R41
+Z75 I_3D:`fajBHd9F[?X7EgOB2
+Z76 V_3D:`fajBHd9F[?X7EgOB2
+S1
+R7
+Z77 w1738730556
+Z78 8.\ram_generator.sv
+Z79 F.\ram_generator.sv
+R59
+R60
+L2 17
+R49
+r1
+31
+R50
+R51
+R52
+R53
+Z80 !s100 nWS7;HCMC`<g85EGg`a1I2
+!i103 1
+!s85 0
+Yram_interface
+R41
+R42
+Z81 VW8NL3N`@]OU5MYS];:M`J2
+r1
+31
+Z82 IzYl2;_oK8oNnRmM=TGj0C0
+R45
+S1
+R7
+R46
+R62
+R47
+R48
+L0 4
+R49
+R50
+R51
+R52
+R53
+Z83 !s100 dJaAlm=:?l>43hZzWiaWS0
+!s85 0
+Xram_trans_sv_unit
+R41
+Z84 IE]HKhK?IJD3hMjS`k:TJZ1
+Z85 VE]HKhK?IJD3hMjS`k:TJZ1
+S1
+R7
+Z86 w1738729086
+Z87 8.\ram_trans.sv
+Z88 F.\ram_trans.sv
+R60
+L1 17
+R49
+r1
+31
+R50
+R51
+R52
+R53
+Z89 !s100 YBDnT^;icIG`U7IQgS71h0
+!i103 1
+!s85 0
+vtrans
+R41
+Z90 DXx4 work 17 ram_trans_sv_unit 0 22 :gYjG9Va;P^;2:ziJgNMd2
+Z91 VY@AgQ16VJTQbeKV[zSKl63
+r1
+31
+Z92 I[lIb?i[4Una?3`MfKMVG[3
+S1
+R7
+Z93 w1738726263
+R87
+R88
+L0 49
+R49
+R53
+Z94 !s108 1738726275.742000
+Z95 !s107 ram_defines.sv|.\ram_trans.sv|.\ram_defines.sv|
+Z96 !s90 .\ram_defines.sv|.\ram_trans.sv|
+Z97 !s100 gfK8?AhaSSdWN5[Ze25o73
+Z98 !s105 ram_trans_sv_unit
+!s85 0

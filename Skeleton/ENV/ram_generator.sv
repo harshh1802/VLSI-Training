@@ -1,8 +1,6 @@
 `ifndef RAM_GENERATOR_SV
 `define RAM_GENERATOR_SV
 
-`include "ram_trans.sv"
-
 class ram_generator;
 
     ram_trans trans, trans_copy;

@@ -1,8 +1,6 @@
 `ifndef RAM_TRANS_SV
 `define RAM_TRANS_SV
 
-`include "ram_defines.sv"
-
 
 class ram_trans;
 
@@ -13,7 +11,7 @@ class ram_trans;
     // TODO: Why we can't take addr as rand?
 
 
-    rand trans_kind trans_type;
+    rand trans_kind_e trans_kind;
 
     randc bit [`ADDR_WIDTH - 1 : 0] rd_addr;
     randc bit [`ADDR_WIDTH - 1 : 0] wr_addr;
@@ -22,7 +20,7 @@ class ram_trans;
     constraint addr {wr_addr <= 2**`ADDR_WIDTH ; rd_addr <= 2**`ADDR_WIDTH; };
 
     function void transaction();
-        $display("Transaction Type = %s, rd_addr = %b, wr_addr = %b, wr_data = %b", trans_type, rd_addr, wr_addr, wr_data);
+        $display("Transaction Type = %s, rd_addr = %b, wr_addr = %b, wr_data = %b", trans_kind, rd_addr, wr_addr, wr_data);
     endfunction
 
     function void prop();
@@ -30,7 +28,7 @@ class ram_trans;
     endfunction
 
     function void post_randomize();
-        case (trans_type)
+        case (trans_kind)
             READ    :     read_count = read_count + 1;
             WRITE   :     write_count = write_count + 1;
             SIM_RW  :     begin
