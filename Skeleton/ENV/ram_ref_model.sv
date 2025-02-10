@@ -9,7 +9,7 @@ class ram_ref_model;
   mailbox #(ram_trans) mon2ref; // Monitor to reference model
   mailbox #(ram_trans) ref2scb; //Reference model to scoreboard
 
-  function void connect(mailbox #(mailbox #(ram_trans) mon2ref, mailbox #(ram_trans) ref2scb);
+  function void connect(mailbox #(ram_trans) mon2ref, mailbox #(ram_trans) ref2scb);
         this.mon2ref = mon2ref;
         this.ref2scb = ref2scb;
     endfunction

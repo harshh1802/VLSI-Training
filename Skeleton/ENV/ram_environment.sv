@@ -52,9 +52,9 @@ class ram_environment;
   endfunction
   
   //call all verif sub component run task in parallel
-  task run();
-  :
-  endtask
+  // task run();
+  // :
+  // endtask
   
 endclass
 

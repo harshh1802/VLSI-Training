@@ -4,7 +4,7 @@
 
 class ram_base_test;
 
-  ram_environment ram_env
+  ram_environment ram_env;
   
   virtual ram_interface rif;
    
@@ -13,17 +13,17 @@ class ram_base_test;
 
       ram_env = new();
 
-   function
+   endfunction
    
    function void connect(virtual ram_interface rif);
 
-      this.rif = rif
+      this.rif = rif;
 
-   function
+   endfunction
    
-   task run();
-    :
-   endtask
+   // task run();
+   //  :
+   // endtask
      
   
 endclass

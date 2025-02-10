@@ -18,15 +18,15 @@ module ram_tb_top();
   ram_base_test ram_test;
   
   
-  //instantiate design
-  ram DUT (.clk(clk),
-           .rst(inf.rst),
-		   .wr_enb(inf.we)
+  // //instantiate design
+  // ram DUT (.clk(clk),
+  //          .rst(inf.rst),
+	// 	   .wr_enb(inf.we)
   
-  //
-  initial
-    //create test
-	//call require test methods and finaly call $finish
-	:
+  // //
+  // initial
+  //   //create test
+	// //call require test methods and finaly call $finish
+	// :
 
 endmodule

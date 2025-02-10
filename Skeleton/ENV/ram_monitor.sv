@@ -11,7 +11,7 @@ class ram_monitor;
 
   virtual ram_interface.MP_MON vif;
   
-  function void connect(mailbox #(mailbox #(ram_trans) mon2ref, mailbox #(ram_trans) mon2scb, virtual ram_interface.MP_MON vif);
+  function void connect(mailbox #(ram_trans) mon2ref, mailbox #(ram_trans) mon2scb, virtual ram_interface.MP_MON vif);
         this.mon2ref = mon2ref;
         this.mon2scb = mon2scb;
         this.vif = vif;
@@ -35,4 +35,4 @@ class ram_monitor;
   endtask
  
 endclass
-`endif macro
+`endif

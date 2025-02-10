@@ -1,6 +1,8 @@
 `ifndef RAM_TRANS_SV
 `define RAM_TRANS_SV
 
+// `include "ram_defines.sv"
+typedef enum bit [1:0] {IDLE, READ, WRITE, SIM_RW} trans_kind_e;
 
 class ram_trans;
 

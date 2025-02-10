@@ -25,7 +25,7 @@ class ram_driver;
 
     task sent_to_duv(ram_trans trans);
 
-         case(trans.trans_type)
+         case(trans.trans_kind)
             WRITE: begin
                 // Drive write signals
                 vif.drv_cb.we <= 1'b1;

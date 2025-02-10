@@ -1,3 +1,4 @@
+`include "ram_defines.sv"
 module ram #(
     parameter ADDR_WIDTH = `ADDR_WIDTH,   // Address width (default: 4)
     parameter DATA_WIDTH = `DATA_WIDTH,   // Data width (default: 8)
