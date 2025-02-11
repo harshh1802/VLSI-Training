@@ -10,23 +10,21 @@ module ram_tb_top();
   end
   
   //take instance of actual interface
-
   ram_interface rif(clk);
   
   
   //take intance of test class
   ram_base_test ram_test;
   
+  //instantiate design
+  ram DUT (.clk(clk), .rst(rif.rst), .we(rif.we), .wr_addr(rif.wr_addr), .wr_din(wr_din),.re(rif.re), .rd_addr(rif.rd_addr), .wr_dout(wr_dout));
   
-  // //instantiate design
-  // ram DUT (.clk(clk),
-  //          .rst(inf.rst),
-	// 	   .wr_enb(inf.we)
-  
-  // //
-  // initial
-  //   //create test
-	// //call require test methods and finaly call $finish
-	// :
+  //
+  initial begin
+    ram_test = new();
+    //create test
+	//call require test methods and finaly call $finish
+  end
+
 
 endmodule
