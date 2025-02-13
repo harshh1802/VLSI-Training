@@ -18,7 +18,7 @@ interface ram_interface(input clk);
     clocking drv_cb @(posedge clk);
 
         default input #1 output #1;
-        input rst;
+        input rst, rd_dout;
         output we, wr_addr, wr_din, re , rd_addr;
 
 
@@ -28,12 +28,12 @@ interface ram_interface(input clk);
 
         default input #1 output #1;
         input rst;
-        input we, wr_addr, wr_din, re , rd_addr;
+        input we, wr_addr, wr_din, re , rd_addr, rd_dout;
 
 
     endclocking
 
-    modport MP_DRV (clocking drv_cb);
+    modport MP_DRV (clocking drv_cb, input rst);
     modport MP_MON (clocking mntr_cb);
 
     

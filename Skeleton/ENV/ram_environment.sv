@@ -52,9 +52,14 @@ class ram_environment;
   endfunction
   
   //call all verif sub component run task in parallel
-  // task run();
-  // :
-  // endtask
+  task run();
+    fork
+    ram_gen.run();
+    ram_dri.run();
+    ram_mon.run();
+    join_none
+    #500 $finish;
+  endtask
   
 endclass
 

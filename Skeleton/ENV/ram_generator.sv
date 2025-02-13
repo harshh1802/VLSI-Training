@@ -8,19 +8,22 @@ class ram_generator;
     mailbox #(ram_trans) mbx;
 
     function void connect(mailbox #(ram_trans) mbx);
+        // $display("[Generator] Connecting mailbox...");
         this.mbx = mbx;
+        // $display("[Generator] Mailbox connected");
     endfunction
 
     task run();
         trans = new();
-        repeat(10) begin
-	    
+        // $display("[Generator] Trans class created");
+
+        repeat(25) begin
 	    if (!trans.randomize())
             $error("RANDOMIZATION FAILED!");
 	    trans_copy = new trans;
 	    mbx.put(trans_copy);
-        $display("RAM GENERATOR DATA OUT = %p", trans_copy);
-        #1;
+        $display("[Generator] %0t DOUT = %p",$time, trans_copy);
+        #10;
         end
     endtask
 
