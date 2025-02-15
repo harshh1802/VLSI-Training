@@ -1,0 +1,2 @@
+vlog ./RTL/ram_rtl.sv ./TEST/ram_pkg.sv ./TOP/ram_tb_top.sv +incdir+./ENV +incdir+./TEST
+vsim ram_tb_top -c -do "run -all; exit"
