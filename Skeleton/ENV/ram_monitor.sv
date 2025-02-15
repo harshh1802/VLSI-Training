@@ -16,23 +16,65 @@ class ram_monitor;
         this.mon2scb = mon2scb;
         this.vif = vif;
     endfunction
-  
+
   //discription
-  task run();
-    //sample/monitor the data from interface as per protocol and put it in
-	//the mailbox to further use by other component
-	//keep separte task for monitoring
+task run();
+    forever begin
+      @(vif.mntr_cb);
+      if (!vif.mntr_cb.rst) begin  // Only monitor when not in reset
+        if (vif.mntr_cb.we || vif.mntr_cb.re) begin  // If there's a write or read operation
+          // $display("[Monitor] time = %0t,  we = %d , wr_addr = %d, wr_din = %d, re = %d, rd_addr = %d, rd_dout = %d",
+          //             $time, vif.mntr_cb.we, vif.mntr_cb.wr_addr, vif.mntr_cb.wr_din, vif.mntr_cb.re, vif.mntr_cb.rd_addr, vif.mntr_cb.rd_dout);
+          monitor();
+        end
+      end
+    end
   endtask
+
   
-  //discription
   task monitor();
-   //sample data from design
-   //create trans_h
-   //trans_h.wr_addr = vif.wmon_cb.wr_addr;
-   //trans_h.kind_e = kind'{vif.wmon_cb.wr_enb,vif.wmon_cb.rd_enb};
-   //$cast(trans_h.kind_e,{vif.wmon_cb.wr_enb,vif.wmon_cb.rd_enb});
-   
-  endtask
+        trans = new();
+        
+        // Determine transaction type based on control signals
+        if (vif.mntr_cb.we && vif.mntr_cb.re) begin
+            trans.trans_kind = SIM_RW;
+            trans.wr_addr = vif.mntr_cb.wr_addr;
+            trans.rd_addr = vif.mntr_cb.rd_addr;
+            trans.wr_data = vif.mntr_cb.wr_din;
+            
+            // Wait one clock cycle to capture read data
+            @(vif.mntr_cb);
+            
+            $display("[MONITOR] %0t SIM_RW: RdAddr=%0h WrAddr=%0h WrData=%0h RdData=%0h",
+                     $time, trans.rd_addr, trans.wr_addr, trans.wr_data, vif.mntr_cb.rd_dout);
+                     
+        end else if (vif.mntr_cb.we) begin
+            trans.trans_kind = WRITE;
+            trans.wr_addr = vif.mntr_cb.wr_addr;
+            trans.wr_data = vif.mntr_cb.wr_din;
+            
+            $display("[MONITOR] %0t WRITE: Addr=%0h Data=%0h",
+                     $time, trans.wr_addr, trans.wr_data);
+                     
+        end else if (vif.mntr_cb.re) begin
+            trans.trans_kind = READ;
+            trans.rd_addr = vif.mntr_cb.rd_addr;
+            
+            // Wait one clock cycle to capture read data
+            @(vif.mntr_cb);
+            
+            $display("[MONITOR] %0t READ: Addr=%0h Data=%0h",
+                     $time, trans.rd_addr, vif.mntr_cb.rd_dout);
+                     
+        end else begin
+            trans.trans_kind = IDLE;
+            $display("[MONITOR] %0t IDLE", $time);
+        end
+        
+        // Send transaction to reference model and scoreboard
+        mon2ref.put(trans);
+        mon2scb.put(trans);
+    endtask
  
 endclass
 `endif
