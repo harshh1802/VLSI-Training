@@ -57,6 +57,8 @@ class ram_environment;
     ram_gen.run();
     ram_dri.run();
     ram_mon.run();
+    ram_ref_m.run();
+    ram_sb.run();
     join_none
     #500 $finish;
   endtask
