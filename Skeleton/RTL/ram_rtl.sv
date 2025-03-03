@@ -19,7 +19,7 @@ module ram #(
 );
 
     // Declare the RAM using parameterized width and depth
-    logic [DATA_WIDTH-1:0] ram [0:DEPTH-1];
+    bit [DATA_WIDTH-1:0] ram [0:DEPTH-1];
 
     always_ff @(posedge clk) begin
         if (rst) begin

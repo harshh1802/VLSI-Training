@@ -60,6 +60,7 @@ class ram_environment;
     ram_ref_m.run();
     ram_sb.run();
     join_none
+    #500 ram_sb.display_results();
     #500 $finish;
   endtask
   

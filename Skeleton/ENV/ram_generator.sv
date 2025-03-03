@@ -23,7 +23,8 @@ class ram_generator;
 	    trans_copy = new trans;
 	    mbx.put(trans_copy);
         $display("[Generator] %0t DOUT = %p",$time, trans_copy);
-        #10;
+        @(item_done_ev);
+        // #10;
         end
     endtask
 

@@ -76,6 +76,8 @@ class ram_driver;
                 $error("[DRIVER] Invalid transaction type received");
             end
         endcase
+
+        -> item_done_ev;
     endtask
 
     // Reset task with posedge reset
